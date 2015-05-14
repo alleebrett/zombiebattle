@@ -23,7 +23,7 @@ class Game {
     board[index].checked = true;
     let gameEnded = this.isOver(board);
     if(gameEnded){
-      alert('its over: challenger won!');
+      alert('You won this time, but Cats will rule!');
     }
 
     return board;

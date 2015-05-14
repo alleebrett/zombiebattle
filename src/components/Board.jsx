@@ -17,7 +17,8 @@ class Board extends React.Component {
       return <Cell key={ cell.id } 
                        handleClick={ this.handleClick.bind(this) }
                        index={ cell.index } 
-                       state={ cell }/>;
+                       state={ cell }
+                       boardType={ this.props.boardType }/>;
     });
 
     let grid = R.map((rowIndex) => {

@@ -28,18 +28,18 @@
 
 .cell {
   flex: 1;
-  background-color: blue;
+  background-color: salmon;
   margin: 1px;
 }
 
 .board-game .cell.cell-is-on.cell-is-checked, .board-control .cell.cell-is-on {
-  background: url(http://upload.wikimedia.org/wikipedia/commons/4/48/Herardic_ship.svg);
+  background: url(http://cdn.shopify.com/s/files/1/0224/1915/products/realistic-tabby-kitty-cat-head-shaped-vinyl-animal-photo-print-clutch-bag-dotoly_1024x1024.jpg?v=1398691200);
   background-size: 100% 100%;
   background-color: blue;
 }
 
 .board-control .cell {
-  background-color: green;
+  background-color: yellow;
 }
 
 .cell:hover{
@@ -51,3 +51,39 @@
   flex: 1;
 } 
 
+body {
+  background: url(https://media.giphy.com/media/w3J7mstYCISqs/giphy.gif);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo {
+  max-height: 15%;
+}
+
+.startButton {
+  cursor: pointer;
+  display: block;
+  appearance: none;
+  border-radius: 0;
+  background: darkturquoise;
+  border: 0;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+.startButton:hover:not(:disabled) {
+  box-shadow: 5px 5px 5px black;
+}
+
+.startButton:disabled {
+  cursor: auto;
+  background: salmon;
+  opacity: 0.50;
+
+}

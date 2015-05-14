@@ -1,5 +1,5 @@
 import React from 'react';
-
+import backgroundmusic from '../battlecat.mp3';
 import Board from './Board.jsx';
 import Game from '../Game.js'
 
@@ -33,11 +33,15 @@ class Interface extends React.Component {
   render(){
     let { started, board } = this.state;
     return (
+    
       <section className="game">
+        <img className="logo" src="http://s24.postimg.org/8lwo92gs5/BATTLECAT.png" /> 
+        <audio src={ backgroundmusic } autoPlay loop>
+        </audio>
         { !started && <Board boardType="control" handleClick={ this.toggleState.bind(this) } board={ board }></Board> }
         { started && <Board boardType="game" handleClick={ this.checkCell.bind(this) } board={ board }></Board> }
 
-        <button disabled={ started } onClick={ this.startGame.bind(this) }>Start Game</button>
+        <button className="startButton" disabled={ started } onClick={ this.startGame.bind(this) }>Start Battle</button>
       </section>
     )
   }
@@ -45,6 +49,7 @@ class Interface extends React.Component {
 
 Interface.defaultProps = {
   gridSize: 4
+
 }
 
 

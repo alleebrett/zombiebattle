@@ -29,7 +29,8 @@ var config = {
       { test: /\.json$/, loader: 'json' },
       { test: /\.yml$/, loader: 'json!yaml' },
       { test: /\.css$/, loader: 'style-loader!css!postcss' },
-      { test: /\.(png|woff)$/, loader: 'url-loader?limit=100000' }
+      { test: /\.(png|woff)$/, loader: 'url-loader?limit=100000' },
+      { test: /\.mp3$/, loader: 'url-loader?' }
     ]
   },
   plugins: [
