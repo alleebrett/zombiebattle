@@ -35,7 +35,7 @@ class Interface extends React.Component {
     return (
     
       <section className="game">
-        <img className="logo" src="http://s24.postimg.org/8lwo92gs5/BATTLECAT.png" /> 
+        <img className="logo" src="http://s4.postimg.org/x6ffo90t9/zombie_battle.png" /> 
         <audio src={ backgroundmusic } autoPlay loop>
         </audio>
         { !started && <Board boardType="control" handleClick={ this.toggleState.bind(this) } board={ board }></Board> }
@@ -48,7 +48,7 @@ class Interface extends React.Component {
 }
 
 Interface.defaultProps = {
-  gridSize: 4
+  gridSize: 3
 
 }
 
